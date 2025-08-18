@@ -26,10 +26,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong
-
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -288,6 +284,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
+    SimDualResCommon \
+    SimSingleResCommon \
     SonyYodoDeviceAsWebcamResCommon \
     SonyYodoFrameworksResCommon \
     SonyYodoSettingsProviderOverlayCommon \
